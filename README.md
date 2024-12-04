@@ -39,6 +39,11 @@ Instead of:
 console.log(greet(user));
 ```
 
+## Other things I added
+Based on settings applied from [some other tutorial](https://github.com/Ifycode-study/cool-react-with-typescript-lib), I added these too in this learning project:
+- .vscode folder: Containing vscode settings useful for prettier
+- .prettierrc config file: prettier code cleanup settings
+
 ## Error and helpful debugging resource
 
 Error upon running `npm start` script command:
