@@ -39,6 +39,15 @@ Instead of:
 console.log(greet(user));
 ```
 
-## Helpful debugging resources:
+## Error and helpful debugging resource
+
+Error upon running `npm start` script command:
+````
+[webpack-cli] Invalid options object. Dev Server has been initialized using an options object that does not match the API schema.
+ - options has an unknown property 'contentBase'. These properties are valid:
+   object { allowedHosts?, bonjour?, client?, compress?, devMiddleware?, headers?, historyApiFallback?, host?, hot?, ipc?, liveReload?, onListening?, open?, port?, proxy?, server?, app?, setupExitSignals?, setupMiddlewares?, static?, watchFiles?, webSocketServer? }
+````
+
+Solution: Use `static` property instead of `contentBase`, in webpack config's `devServer` object.
 
 Slack overflow comment: https://stackoverflow.com/a/72190722
